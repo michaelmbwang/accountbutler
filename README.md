@@ -30,3 +30,17 @@ INSERT INTO [User]
 VALUES('d','d');
 
 Select * from [User];
+
+CREATE TABLE [Asset]
+(
+UserName nchar(50) NOT NULL, 
+Savings real,
+CheckingAccount real,
+CreditCard real,
+Investment real,
+Cash real,
+Others real,
+CONSTRAINT PK_Asset PRIMARY KEY (UserName),
+CONSTRAINT FK_Asset_User FOREIGN KEY (UserName)     
+    REFERENCES [User] (UserName) 
+);
