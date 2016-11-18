@@ -44,3 +44,57 @@ CONSTRAINT PK_Asset PRIMARY KEY (UserName),
 CONSTRAINT FK_Asset_User FOREIGN KEY (UserName)     
     REFERENCES [User] (UserName) 
 );
+
+INSERT INTO [Asset] 
+VALUES('du',2.1,1,1,1,1,1);
+
+Select * from [Asset];
+
+CREATE TABLE [Budget]
+(
+BudgetId uniqueidentifier NOT NULL,
+UserName nchar(50) NOT NULL, 
+MonthTotalAmount real,
+Food real,
+Clothes real,
+Transportation real,
+Groceries real,
+Education real,
+Health real,
+Housing real,
+Savings real,
+Others real,
+BudgetYear nchar(10),
+BudgetMonth nchar(10),
+CONSTRAINT PK_Budget PRIMARY KEY (BudgetId),
+CONSTRAINT FK_Budget_User FOREIGN KEY (UserName)     
+    REFERENCES [User] (UserName) 
+);
+
+Not inserted yet
+
+Select * from [Budget];
+
+CREATE TABLE [Record]
+(
+RecordId uniqueidentifier NOT NULL,
+UserName nchar(50) NOT NULL, 
+Income tinyint,
+AssetType nchar(20),
+Location nchar(500),
+Amount real,
+Comment nchar(500),
+Date date,
+ExpenseType nchar(20),
+CONSTRAINT PK_Record PRIMARY KEY (RecordId),
+CONSTRAINT FK_Record_User FOREIGN KEY (UserName)     
+    REFERENCES [User] (UserName) 
+);
+
+INSERT INTO [Record] 
+VALUES(NEWID(),'d',0,'Cash','H',100,'C',GETDATE(),'Health');
+
+Select * from [Record];
+
+
+
