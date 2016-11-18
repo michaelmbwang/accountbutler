@@ -15,7 +15,7 @@ http://somee.com/DOKA/DOU/DOMP/DOMSSQL/DOMSSQLQuery.aspx?k1k3k5=9E0XWM5bRdzJd92V
 user:duyuefeng0708
 pw:Cs33433343
 
-sql server (transact-sql) sql script (taking user as an example)
+sql server (transact-sql) sql scripts (taking user as an example)
 
 CREATE TABLE [User]
 (
