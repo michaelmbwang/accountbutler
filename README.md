@@ -17,7 +17,7 @@ pw:Cs33433343
 
 sql server (transact-sql) sql scripts (taking user as an example)
 
-to know more about the User, select RAW to see the full sql codes
+//to know more about the User, select RAW to see the full sql codes
 CREATE TABLE [User]
 (
 UserName nchar(50) NOT NULL, 
