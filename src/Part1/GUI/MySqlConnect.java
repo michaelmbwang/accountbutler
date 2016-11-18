@@ -16,7 +16,7 @@ public class MySqlConnect {
     public static Connection ConnectDB(){
         try{
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            Connection conn = DriverManager.getConnection("jdbc:sqlserver://localhost;databaseName=cs3343;user=Netbeans;password=cs3343;");
+            Connection conn = DriverManager.getConnection("jdbc:sqlserver://cs3343test.mssql.somee.com;databaseName=cs3343test;user=Netbeans;password=Cs33433343;");
             //JOptionPane.showMessageDialog(null, "Connect to database");
             return conn;
         }catch(Exception e){
